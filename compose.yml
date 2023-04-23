@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: app
+    restart: always
+    command: sh -c "/wait && python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/app
+      - ./certs:/certs
+    depends_on:
+      - db
+      - redis
+    env_file:
+      - .env
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings
+      - ECODOTS_ENV=dev
+      - WAIT_HOSTS=db:5432,redis:6379
+
+  redis:
+    container_name: redis-chat
+    restart: always
+    image: "redis:alpine"
+
+  db:
+    image: postgres
+    container_name: db
+    restart: always
+    ports:
+      - 5432:5432
+    env_file:
+      - .env
+    volumes:
+      - appdb:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    container_name: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  appdb:
+  static_volume:
+  media_volume:

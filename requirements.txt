@@ -1,0 +1,10 @@
+Django==4.0
+channels==3.0.4
+psycopg2
+daphne<4,>=3.0
+channels_redis==3.3.1
+cryptography==3.4.6
+Pillow==5.0
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
