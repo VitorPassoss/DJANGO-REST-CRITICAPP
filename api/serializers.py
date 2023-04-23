@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import (Films,Review)
+from .models import (Films,Review,TokensUser)
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
@@ -7,7 +7,7 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 class FilmsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Films
-        fields = ['pk', 'name', 'type', 'description', 'author']
+        fields = ['pk', 'name', 'type', 'description', 'author','image_url']
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -29,6 +29,11 @@ class ReviewSeriaizer(serializers.ModelSerializer):
         fields = ["pk","user","film","ranged","critic"]
 
 
+class TokensSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = TokensUser
+        fields = ["pk","user_fk","expiration","token"]
+
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
     def get_token(cls, user):
@@ -36,3 +41,8 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
         token['name'] = user.name
         token['email'] = user.email
         return token
+    
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'first_name', 'last_name']

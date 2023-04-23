@@ -6,6 +6,8 @@ class Films(models.Model):
     type = models.CharField(max_length=50)
     description = models.CharField(max_length=150)
     author = models.CharField(max_length=50)
+    image_url = models.CharField(max_length=140)
+
 
 class Review(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
@@ -16,4 +18,3 @@ class Review(models.Model):
 class TokensUser(models.Model):
     token = models.CharField(max_length=255)
     user_fk = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-    expiration = models.DateTimeField()
