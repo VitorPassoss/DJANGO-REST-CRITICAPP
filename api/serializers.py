@@ -24,9 +24,11 @@ class UserSerializer(serializers.ModelSerializer):
         return user
     
 class ReviewSeriaizer(serializers.ModelSerializer):
+    user = UserSerializer()
+    film = FilmsSerializer()
     class Meta:
         model = Review
-        fields = ["pk","user","film","ranged","critic"]
+        fields = ["pk","user","film","ranged","critic","film"]
 
 
 class TokensSerializer(serializers.ModelSerializer):
@@ -42,7 +44,3 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
         token['email'] = user.email
         return token
     
-class UserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = User
-        fields = ['id', 'username', 'email', 'first_name', 'last_name']
