@@ -33,7 +33,7 @@ class FilmDetail(APIView):
     #permission_classes = [IsAuthenticated]
     def get(self, request, id, format=None):
         film = Films.objects.get(pk=id)
-        reviews = Review.objects.filter(books=film)
+        reviews = Review.objects.filter(film=film)
         film_serializer = FilmsSerializer(film)
         reviews_serializer = ReviewSeriaizer(reviews, many=True)
         return Response({'films': film_serializer.data, 'reviews': reviews_serializer.data})

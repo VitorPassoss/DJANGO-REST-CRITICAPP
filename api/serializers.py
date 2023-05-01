@@ -7,7 +7,7 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 class FilmsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Films
-        fields = ['pk', 'name', 'type', 'description', 'author','image_url']
+        fields = ['pk', 'name', 'type', 'description', 'author','image_url', 'banner_url']
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
