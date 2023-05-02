@@ -1,0 +1,89 @@
+[
+    {   "model":"api.films",
+        "fields":{
+            "name": "The Super Mario Bros. Movie",
+            "type": "Animation",
+            "description": "While working underground to fix a water main, Brooklyn plumbers—and brothers—Mario and Luigi are transported down a mysterious pipe and wander into a magical new world. But when the brothers are separated, Mario embarks on an epic quest to find Luigi.",
+            "author": "Michael Jelenic, Aaron Horvath",
+            "image_url": "https://a.ltrbxd.com/resized/film-poster/4/3/2/3/0/2/432302-the-super-mario-bros-movie-0-230-0-345-crop.jpg",
+            "banner_url": "https://a.ltrbxd.com/resized/sm/upload/f3/61/49/x0/super%20mario-1200-1200-675-675-crop-000000.jpg"
+        }
+    },
+    {
+        "model":"api.films",
+        "fields":{
+            "name": "La La Land",
+            "type": "Musical",
+            "description": "HERE’S TO THE FOOLS WHO DREAM. Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician",
+            "author": "Damien Chazelle",
+            "image_url": "https://a.ltrbxd.com/resized/film-poster/2/4/0/3/4/4/240344-la-la-land-0-230-0-345-crop.jpg",
+            "banner_url": "https://a.ltrbxd.com/resized/sm/upload/a6/th/cz/kf/la-la-land-1200-1200-675-675-crop-000000.jpg"
+        }
+    },
+    {
+        "model":"api.films",
+        "fields":{
+            "name": "Suzume",
+            "type": "Dramatic",
+            "description": "ON THE OTHER SIDE OF THE DOOR, WAS TIME IN ITS ENTIRETY. Suzume, 17, lost her mother as a little girl. On her way to school, she meets a mysterious young man. But her curiosity unleashes a calamity that endangers the entire population of Japan, and so Suzume embarks on a journey to set things right.",
+            "author": "Makoto Shinkai",
+            "image_url": "https://a.ltrbxd.com/resized/film-poster/8/2/2/2/8/1/822281-suzume-0-230-0-345-crop.jpg",
+            "banner_url": "https://a.ltrbxd.com/resized/sm/upload/wi/k1/cs/mn/suzume-1200-1200-675-675-crop-000000.jpg"
+        }
+    },
+    {
+        "model":"api.films",
+        "fields":{
+            "name": "Princess Mononoke",
+            "type": "Animation",
+            "description": "Ashitaka, a prince of the disappearing Emishi people, is cursed by a demonized boar god and must journey to the west to find a cure. Along the way, he encounters San, a young human woman fighting to protect the forest, and Lady Eboshi, who is trying to destroy it. Ashitaka must find a way to bring balance to this conflict.",
+            "author": "Hayao Miyazaki",
+            "image_url": "https://a.ltrbxd.com/resized/sm/upload/fu/5h/fp/mj/mNqZOtJIQfFQPjo3hmYLIn8Qqhf-0-230-0-345-crop.jpg?v=aae03975f7",
+            "banner_url": "https://a.ltrbxd.com/resized/sm/upload/xm/8h/pb/zl/princess-mononoke-1200-1200-675-675-crop-000000.jpg"
+        }
+    },
+    {
+        "model":"api.films",
+        "fields":{
+            "name": "Spirited Away",
+            "type": "Animation",
+            "description": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
+            "author": "Hayao Miyazaki",
+            "image_url": "https://a.ltrbxd.com/resized/film-poster/5/1/9/2/1/51921-spirited-away-0-500-0-750-crop.jpg?v=a3ad463c55",
+            "banner_url": "https://a.ltrbxd.com/resized/sm/upload/s7/yb/jv/eq/spirited-away-1200-1200-675-675-crop-000000.jpg?v=d89d148596"
+        }
+    },
+    {
+        "model":"api.films",
+        "fields":{
+            "name": "Fight Club",
+            "type": "Dramatic",
+            "description": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground “fight clubs” forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+            "author": "David Fincher",
+            "image_url": "https://a.ltrbxd.com/resized/sm/upload/b0/iz/eb/dq/fight-club-1200-1200-675-675-crop-000000.jpg?v=1e6ef6695e",
+            "banner_url": "https://a.ltrbxd.com/resized/sm/upload/s7/yb/jv/eq/spirited-away-1200-1200-675-675-crop-000000.jpg?v=d89d148596"
+        }
+    },
+    {
+        "model":"api.films",
+        "fields":{
+            "name": "The Social Network",
+            "type": "Dramatic",
+            "description": "On a fall night in 2003, Harvard undergrad and computer programming genius Mark Zuckerberg sits down at his computer and heatedly begins working on a new idea.",
+            "author": "David Fincher",
+            "image_url": "https://a.ltrbxd.com/resized/sm/upload/nw/cm/pa/ai/sGQv3ZMZBDBnl3z42Q0mEQ5uiDe-0-500-0-750-crop.jpg?v=54ee59f7cd",
+            "banner_url": "https://a.ltrbxd.com/resized/sm/upload/cw/9j/d9/kp/the-social-network-1200-1200-675-675-crop-000000.jpg?v=013f99a365"
+        }
+    },
+    {
+        "model":"api.films",
+        "fields":{
+            "name": "2001: A Space Odyssey",
+            "type": "Dramatic",
+            "description": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world’s most advanced super computer.",
+            "author": "Stanley Kubrick",
+            "image_url": "https://a.ltrbxd.com/resized/sm/upload/fe/jp/49/l9/eDiexVN4nO3ZdDZCDMiJOX5fQ5r-0-230-0-345-crop.jpg?v=ef7fa718a0",
+            "banner_url": "https://a.ltrbxd.com/resized/sm/upload/x3/fx/ae/ju/2001-space-odyssey-120-1200-1200-675-675-crop-000000.jpg?v=37a8a99963"
+        }
+    }
+]
