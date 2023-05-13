@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 from django.utils.timezone import make_aware
 from rest_framework_simplejwt.views import TokenObtainPairView
 from .serializers import TokenObtainPairSerializer
+from django.http import HttpResponseBadRequest
 
 class FilmView(APIView):
     #permission_classes = [IsAuthenticated]
